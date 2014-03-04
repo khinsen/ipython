@@ -340,6 +340,9 @@ var IPython = (function (IPython) {
 
         var content = {
             code : code,
+            source : {'source_type' : "notebook",
+                     'notebook_path' : IPython.notebook.notebook_path,
+                     'notebook_name' : IPython.notebook.notebook_name},
             silent : true,
             store_history : false,
             user_variables : [],
